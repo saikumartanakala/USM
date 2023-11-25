@@ -1,0 +1,93 @@
+75. What is a BSM Map?
+Ans: BSM Map is a Business Service Management map. It graphically displays the configuration items (CI) that support a business service and indicates the status of those configuration items.
+
+76. In which table update sets and customization are stored?
+Ans: Each update set is stored in the Update Set [sys_update_set] table, and the customizations that are associated with the update set, are stored in [sys_update_xml] table.
+
+77. What happens if a Default update set is marked as complete?
+Ans: If the Default update set is marked Complete, the system creates another update set named Default1 and uses it as the default update set.
+
+78. Are Does Homepages and Content pages added to the update sets?
+Ans: Homepages and content pages are not added to update sets by default. You must manually add pages to the current update set by unloading them.
+
+79. What is a Reference qualifier?
+Ans: Reference qualifiers are used to restrict the data that is selectable for a reference field.
+
+80. What is Performance Analytics in ServiceNow?
+Ans: Performance Analytics is an additional application in ServiceNow that allows customers to take a snapshot of data at regular intervals and create time series for any key performance indicator (KPI) in the organization.
+
+81. How to disable client transactions?
+Ans: Set the glide.client.track_transaction_timingsproperty to false to disable any client transaction.
+Refer for more: https://wiki.servicenow.com/index.php?title=Client_Transaction_Timings
+
+82. How to change the Homepage layout?
+Ans: Administrators can create or modify layouts by navigating to Homepage Admin > Layouts.
+
+83. How to change the banner and list caption background color?
+Ans: You can change the banner and list caption background color by navigating to
+System Properties > CSS.
+
+84. How to create a new role?
+Ans: Navigate to User Administration > Role and click New.
+
+85. Can I have more than one function listening to the same thing?
+Ans: You can, but there is no guarantee of sequencing. You cannot predict what order your event handlers will run.
+
+90. Which method is used to get all the active/inactive records from a table?
+Ans: You can use the addActiveQuery() method to get all the active records and the addInactiveQuery() to get all inactive records.
+
+91. How do you get the result set from two tables in the glide script?
+Ans: 
+
+addJoinQuery(joinTable, [primaryField], [joinTableField])
+
+Note: This is not a true DATABASE Join. addJoinQuery() adds a subQuery.
+
+92. Which object is used to reference the currently active form in the client script?
+Ans: g_form object is used to reference the currently active form in the client script
+
+93. Which object is used to refer to the currently logged-in user in the client script?
+Ans: You can use the object g_user object to get the details of the currently active user.
+
+94. State the best practices of client scripts?
+Ans: Few of the best practices to use client Scripts :
+
+Enclose Code in Functions.
+Avoid DOM manipulation, use g_form object.
+Avoid global client scripting, etc.
+95. How will you hide/show a field using client script?
+Ans: You can use the g_form.setVisible(‘field name’, ‘value’); method to show/hide a field using client script.
+
+96. What is the processing order for Record ACL rules?
+Ans: Record ACL rules are processed in the following order:
+
+Match the object against field ACL rules.
+Match the object against table ACL rules.
+User must pass both field and table ACL rules in order to access a record object Relationship.
+97. How do you get the records of specified fields which are not null?
+Ans: addNotNullQuery(String fieldName) can be used.
+Example: To get all the records where ‘name’ is not null.
+
+addNotNullQuery(‘name’);
+98. How will you get all the records where the incident is having a category as hardware or software?
+Ans: Use addOrCondition(String name, String oper, Object value) .
+Example :
+
+var gr = new GlideRecord(‘incident’);
+var qc = gr.addQuery(‘category’, ‘hardware’);
+qc.addOrCondition(‘category’, ‘software’);
+gr.query();
+99. How to set the invalid queries into empty result sets?
+Ans: By default queries with the invalid field, names run but ignore the invalid condition. For more strict query control you can enable the glide.invalid_query.returns_no_rows property which will result in an empty result set for invalid queries.
+
+100. How to determine whether any of the field values in a record has changed?
+Ans: By using the method changes() you can determine that the field value has been changed for a record.
+
+Visit Here to Learn: ServiceNow Online Training in Hyderabad
+
+101. What is the difference between next() and _next() method?
+Ans: The next() method is responsible to move to the next record in GlideRecord. _next() provides the same functionality as next(), intended to be used in cases when we query the table having a column name as next.
+
+102. Which glide function is used to retrieve the number of rows of a table?
+Ans: Using getRowCount() method .
+For more information, visit  https://wiki.servicenow.com/index.php?title=GlideRecord

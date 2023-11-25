@@ -1,0 +1,90 @@
+1.What is ServiceNow Ticketing Tool?
+Solving an issue can cost you loads of time, effort, and money in the IT sector. To prevent all of them, ServiceNow has introduced its Ticketing Tool. Resolving issues in IT is not a piece of cake and can cause a disturbance in everyday IT processes. ServiceNow Ticketing Tool works in a well-organized stepwise process to resolve users’ issues.
+
+2. What is ServiceNow?
+Ans: ServiceNow is a cloud-based ITSM tool. Please check the below URL before attending a service-now interview.
+
+3. What do you mean by the term “Application” in ServiceNow?
+Ans: Application is a group of modules that provides related information. For example, a change application provides information related to the change process. It consists of modules like create change tickets, view change tickets, etc.
+
+4. What is the latest ServiceNow user interface and when it was released?
+Ans: The latest user interface is the UI14 interface. It came in the Eureka release
+
+5. What is the full form of CMDB?
+Ans: Configuration Management Database
+
+
+
+6. What is the CMDB Baseline?
+Ans: CMDB baselines help to understand and control the changes that have been made to a configuration item(CI) after its Baseline has been created. The baseline is the snapshot of a CI
+
+7. How to enable or disable an application?
+Ans: Navigate to the “Application Menus” module under the system definition application. Open the respective application that requires enabling or disable. Set active as true to enable it or set active to false to disable it
+
+8. What is a view?
+Ans: The view defines the arrangement of fields on a form or a list. For one single form, we can define multiple views according to the user preferences or requirements.
+
+9. What is the ACL?
+Ans: An ACL is an access control list that defines what data a user can access and how they can access it in service now.
+
+MindMajix Youtube Channel Subscription
+
+10. What do you mean by impersonating a user? How it is useful?
+Ans: Impersonating a user means that you can log in to the system as that user and can have felt how the service-now UI is set for that user. This is very useful while testing. For example, if you are required to test whether a user can access the change form or not. You can impersonate that user and can test instead of logging out from your session and logging in again with that user's credentials.
+
+11. Which is the Parent table for the incident, change, and problem?
+Ans: Task table
+
+12. What is a record producer?
+Ans: A record producer is a type of catalog item that allows users to create task-based records from the service catalog. For example, you can create a change record or problem record using a record producer. Record producers provide an alternative way to create records through the service catalog
+
+13. What is a dictionary override?
+Ans: Dictionary Overrides provides the capability to override several properties of a field in an extended table. For example, a changing table is extended from the task table. There is a field named status in the task table and set as read-only.
+
+When we use this field in change form it will show to be read-only. We can set this to non-read only by using the dictionary override. Similarly, there are other properties that can be set for the fields in an extended table.
+
+14. What do you mean by coalescing?
+Ans: Coalesce is a property of a field that we use in transform map field mapping. When we set the coalesce as true for a field mapping it signifies that this field will work as a unique key.
+
+If a field match is found with the coalesce field, then the existing record will be updated with the imported information in the target table else a new record will be inserted into the target table
+
+15. What is a UI policy?
+Ans: UI policies are alternatives to client scripts. It can be used to set a field as mandatory, read-only, and visible on a form. You can also use UI policy for dynamically changing a field on a form.
+
+Related Article: ServiceNow Tutorial for Beginners
+16. What is a data policy?
+Ans: Data policy checks the mandatory and read-only of a field whenever a record is inserted or updated through a web service or import set.
+
+For example: If a mandatory field in the incoming record (from import set or web service) is empty then the data policy will not allow inserting that record into the table.
+
+17. What is the difference between UI policy and data policy?
+Ans: UI policy acts when a record is inserted or updated through a ServiceNow UI i.e ServiceNow forms while data policy acts whenever a record is inserted or updated into the database through any means.
+
+18. What is a client script?
+Ans: Client script sits on the client-side(the browser) and run there only.types of client script are OnLoad() OnSubmit() OnChange() OncellEdit)
+
+19. How can you cancel a form submission through client script?
+Ans: In the onSubmit function return false. function onSubmit() { return false;}          
+
+20. What is a business rule?
+Ans: A business rule is server-side scripting that executes whenever a record is inserted, updated, deleted, displayed, or queried.
+
+The key thing to keep in mind while creating a business rule is when and on what action it has to execute. You can run the business rule ‘on display, ‘on before’, or ‘on after’ of an action (insert, delete, update) is performed.
+
+21. Can you call a business rule through a client script?
+Ans: Yes you can call a business rule through a client script by using glideajax
+
+22. What is a glide record?
+Ans: Gliderecord is a java class that is used for database operations instead of writing SQL Queries.
+
+23. What do you mean by data lookup and record matching?
+Ans: Data lookup and record matching feature helps to set a field value based on some conditions instead of writing scripts. For example: on Incident forms, the priority lookup rules sample data automatically sets the incident Priority based on the incident Impact and Urgency values. Data lookup rules allow specifying the conditions and fields where they want data lookups to occur.
+
+24. What is an updated set?
+Ans: An updated set is a group of customization. It captures the customization or configuration changes made by a user and then these update sets can be moved from one instance to another.
+
+For example, if we made some configuration changes in our development environment and want some changes in our test environment then we can capture all the changes in an updated set and can move this update set to the test environment instead of doing changes manually in a test environment.
+
+25. What is a sys_id?
+Ans: A unique 32-character GUID that identifies each record created in each table in ServiceNow
+

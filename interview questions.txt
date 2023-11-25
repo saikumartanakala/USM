@@ -1,0 +1,189 @@
+1. Explain record matching and data lookup features in ServiceNow.
+Using features, such as record matching and data lookup in ServiceNow, you can set up the field value based on a specific condition rather than scriptwriting. When you work with your data, you can use the data lookup feature for specifying the conditions and fields where you intend to use data lookup
+
+2. What is the meaning of impersonating a user and how is it useful?
+Impersonating involves providing administrator access to specifics accessible by the actual user. Impersonating a user is useful in testing. When impersonation takes place, ServiceNow records all the administrator activities.
+
+3. Detail about client script.
+Client script runs on client side and also sits on the browser. The types of client scripts are OnLoad(), OnChange(), OnSubmit() and OncellEdit(). 
+
+4. Define record producer.
+A record producer is a catalog item that lets users create task-based records from the Service Catalog. It provides an alternate way for creating records through Service Catalog. 
+
+Let us look at the next ServiceNow interview question.
+
+Full Stack Web Developer Course
+To become an expert in MEAN StackVIEW COURSEFull Stack Web Developer Course
+5. Name the searching technique used to search a record or text in ServiceNow.
+In ServiceNow, Zing is the searching technique that performs all text searches.
+
+6. What do you understand by HTML Sanitizer?
+The HTML Sanitizer is used to automatically clean up HTML markup in HTML fields. It protects against security concerns and removes unwanted code. It is active for all instances beginning with the Eureka release.  
+
+Let us look at the next ServiceNow interview question.
+
+7. Explain BSM Map.
+BSM or Business Service Management map graphically displays configuration items. These items indicate the status of Configuration items and support a business service. 
+
+8. Define performance analytics.
+In ServiceNow, performance analytics is an additional application that allows customers to create time series for any KPI and take a snapshot of data at regular intervals. 
+
+9. What is the use of a reference qualifier?
+It is used to restrict the data that can be selected for a reference field. 
+
+10. Differentiate between _next() and next() method.
+next() method moves the record to the next in GlideRecord. _next() has the same functionality as next(), but it is used in cases when a tale having column name ‘next’ is queried. 
+
+Let us look at the next ServiceNow interview question.
+
+11. What is an ‘application’ in ServiceNow?
+It is a group of modules that give related information. A change application consists of modules such as create or view change tickets. 
+
+12. What is a business rule?
+A business rule is created to help you decide when and on what action the business rule will be executed. It is server-side scripting, and it is when there is insertion, updating, deletion, or query on a record that it gets executed.
+
+13. Who can create or update ACL?
+security_admin creates or updates ACL. 
+
+14. What is meant by domain separation?
+It is a way to separate data into logically defined domains. It is used to isolate the records of one business from the other. 
+
+Let us look at the next ServiceNow interview question.
+
+15.What is the function of the set workflow(e)?
+Set workflow (e) disables or enables running business rules that are usually triggered by subsequent actions. An insert/update will not be audited if the ‘e’ parameter is set to false. When the ‘e’ parameter is set to true, business rules are enabled.
+
+16. What are ServiceNow Metrics?
+ServiceNow metrics measure and record the workflow of individual records. Metrics allow customers to arm their processes by providing tangible features. 
+
+17. How locked out users trigger inbound email actions?
+Add the system property glide.pop3.process_locked_out and set it to true. 
+
+18. How do we get all the active and inactive records from a table?
+Use the addActiveQuery() method for active records and addInactiveQuery() for getting inactive records. 
+
+Let us look at the next ServiceNow interview question.
+
+19. Determine if any of the field values in a record has changed.
+Use the changes() method to determine if the field value has been changed. 
+
+20. How can an application be enabled or disabled?
+Under the system definition application, go to the ‘Application Menus’ module. Open the respective application and set active as accurate to enable or false to disable it. 
+
+New Course: Full Stack Development for Beginners
+Learn Git Command, Angular, NodeJS, Maven & MoreENROLL NOWNew Course: Full Stack Development for Beginners
+21. What is dictionary override in ServiceNow?
+Using dictionary override, you can override several field properties in an extended table. For instance, when you extend a changing table from the task table and the status field is read-only, you can use dictionary override to change this to non-read only.
+
+22. Can client script be used to call a business rule?
+A business rule can be called through client script by the use of glideajax. 
+
+23. What do you understand by Gauges?
+Gauges are based on a report and can be put on a content page or a homepage.
+
+24. Are content pages and homepages added to the update sets?
+By default, update sets do not include content pages and homepages. The pages must be manually added to the current update set by unloading. 
+
+25. Define CMDB.
+CMDB or Configuration management database is a repository that acts as a data warehouse for IT installations. It includes data related to a set of IT assets and also descriptive relations among such assets. 
+
+Let us look at the next ServiceNow interview question.
+
+26. What are UI policies in ServiceNow?
+UI policies serve as an alternative for client scripts, and when you use UI policies, it allows you to change a field dynamically on a form.
+
+27. What is an inactivity monitor?
+An inactivity monitor triggers an event for a task record inactive for a specific time. The monitor repeats at regular intervals if the task continues to be inactive. 
+
+28. What are glide records?
+Gliderecord is a java class utilized for database operations instead of writing SQL queries. 
+
+29. What do you understand by a ‘view’?
+The view is used to define the arrangement of fields on a list or a form. We can define multiple views for one single form according to the user requirement. 
+
+30. What is the data policy?
+A data policy helps you with the enforcement consistency across data by setting mandatory states and read-only. Much like UI policies, the only difference between the two is that UI policies are applicable only to the data on forms you receive from standard browsers.
+
+31. What is an Import Set?
+It is a tool that imports data from various data sources, and that data is mapped into ServiceNow tables using a transform map. 
+
+32. What is the use of the client transaction timings plugin?
+The client transaction timings plugin is used to enhance the system logs by providing more information on transaction duration between the server and the client. This allows tracking down issues. 
+
+Let us look at the next ServiceNow interview question.
+
+33. Tell us the significance of the cascade variable check box in the order guide.
+Cascade Variable Check Box passes their value to the ordered items. If it is cleared, the variable information entered is not passed on to ordered items. 
+
+34. How to reference the currently active form in the client script?
+To reference the currently active form, the g_from object is used. 
+
+35. How is automatic user creation from email enabled?
+For this, glide.pop3readerjob.create_caller property needs to be set true in system properties. 
+
+Full Stack Java Developer Course
+In Partnership with HIRIST and HackerEarthEXPLORE COURSEFull Stack Java Developer Course
+36. How can you create your report?
+A report can be created by navigating to reports and then click on ‘Create New.’ 
+
+Let us look at the next ServiceNow interview question.
+
+37. How can an attachment on a specific ServiceNow table be disabled?
+ Add ‘Add no_attachment’ to the attributes field in the dictionary of that table. 
+
+38. While using Servicenow, which practices should be followed?
+Some of the practices are:
+
+Replace email and spreadsheets with collaborative workspaces
+Automate every organization’s business process
+Aim to structure, automate and enhance the workflow 
+Develop a modern work environment
+39. What are the search options in ServiceNow?
+The search options are:
+
+Knowledgebase: helps to find knowledge articles
+Lists: used to find records in a list
+Search scenes: custom module created by administrators
+Navigation filter: filters the items in the application navigator
+Global Text Search: helps record in multiple task tables 
+Let us look at the next ServiceNow interview question.
+
+40. Tell the sequence of publishing a knowledge article.
+Draft -> Review -> Publish
+
+41. How can you delete tables in ServiceNow?
+Go to ‘Tables and Columns,’ choose ‘delete’ and type the word ‘delete.’
+
+42. What is ACL?
+ACL or Access Control List is a rule that matches the object and permissions required to access the object. 
+
+43. What is an update set?
+An update set is a group of customizations that can be moved from instance to instance. 
+
+44. List workflow activities.
+The workflow activities include conditions, approvals, tasks, timers, utilities, and notifications. 
+
+Let us look at the next ServiceNow interview question.
+
+45. What happens when a request is rejected?
+If a request is rejected, notification is sent, and status is set to cancel. The service catalog workflow can be attached either manually, automatically based on conditions, or if no other workflows are attached. 
+
+46. Which is the parent table for the change, incident, and problem?
+The task table is the parent table.
+
+Free Course: Programming Fundamentals
+Learn the Basics of ProgrammingENROLL NOWFree Course: Programming Fundamentals
+47. What do you understand by sys_id?
+sys_id is a unique 32 character GUID used to identify each record created in each Servicenow’s table.
+
+48. How can pie chart labels be enabled and disabled?
+Set the property glide.ui.chart.pie.tables to true and false, respectively. 
+
+49. What do you understand by Foreign record insert?
+When an import changes to a table that is not the target table for that import, a foreign record insert occurs. 
+
+50. What is a ServiceNow dashboard?
+The dashboard is a visual collection of paralytics and reports presented as indicator summary tab and KPI scoreboards.
+
+51. What is meant by Coalesce in ServiceNow?
+Coalesce is a field property useful in transform map field mapping. When you use it on a specific field, the field can be used as a unique key. When a match is found with the coalesce field, it results in the update of the existing record with the imported information. However, when you are unable to find a match, it results in the insertion of a new record into the database.
